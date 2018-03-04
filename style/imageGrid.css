@@ -1,0 +1,35 @@
+.pplContainer{
+  margin-left:30px;
+}
+.pplContainer:before,.pplContainer:after {
+    content: "";
+    display: table;
+}
+.pplContainer:after {
+    clear: both;
+}
+.facitem {
+    float: left;
+    margin: 15px;
+}
+.facitem:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 5;
+}
+.facitem img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+}
+.facitem p{
+    color: black;
+    font-weight: bold;
+}
+.first-item {
+    clear: both;
+}
+/* remove margin bottom on last row */
+.last-row, .last-row ~ .item {
+    margin-bottom: 0;
+}
